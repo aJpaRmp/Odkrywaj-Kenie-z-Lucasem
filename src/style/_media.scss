@@ -1,0 +1,59 @@
+@use "./variables";
+@media (max-width: 1220px) {
+  #logo {
+    width: 70px !important;
+  }
+  h1 {
+    font-size: 25px !important;
+  }
+}
+@media (max-width: 1000px) {
+  header {
+    #logo {
+      width: 80px !important;
+    }
+  }
+}
+@media (max-width: 580px) {
+  header {
+    .logo__name {
+      h1 {
+        font-size: 22px !important;
+      }
+    }
+  }
+  nav {
+    width: 100% !important;
+    height: 100% !important;
+    font-size: 40px !important;
+  }
+  #main {
+    .main__img {
+      transform: scale(0.8);
+      transition: transform 0.3s ease;
+    }
+  }
+  footer {
+    font-size: 10px;
+    padding: 2px !important;
+    .socialmedia {
+      width: 145px;
+    }
+    .prawa__autorkie {
+      height: 100%;
+      width: 450px !important;
+      text-align: center;
+    }
+    h4 {
+      display: flex !important;
+      font-size: 10px;
+    }
+    h5 {
+      display: none;
+    }
+    .telefon {
+      flex-direction: column;
+      width: 135px;
+    }
+  }
+}

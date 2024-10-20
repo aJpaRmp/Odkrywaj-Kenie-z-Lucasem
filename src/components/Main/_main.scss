@@ -1,0 +1,26 @@
+@use "../../style/variables";
+
+#main {
+  padding: 15px;
+  color: variables.$white;
+  .main__img {
+    border: 1px solid variables.$white;
+    border-radius: 20px;
+    -webkit-box-shadow: 7px 8px 18px -2px rgba(55, 91, 55, 1);
+    -moz-box-shadow: 7px 8px 18px -2px rgba(55, 91, 55, 1);
+    box-shadow: 7px 8px 18px -2px rgba(55, 91, 55, 1);
+  }
+  .info {
+    margin: auto;
+    h2 {
+      font-size: 50px;
+    }
+    #btnContact {
+      margin: 25px auto;
+    }
+  }
+  .main__divOne,
+  .main__divTwo {
+    margin-bottom: 10px;
+  }
+}
