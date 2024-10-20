@@ -1,13 +1,18 @@
 @use "../../style/variables";
 
 nav {
-  display: flex;
-  width: 50%;
-  justify-content: space-evenly;
   padding: 5px;
   font-size: 1.4rem;
+  width: 50%;
+  margin-right: 10px;
+  position: relative;
 }
 .nav__a {
   margin: 10px;
   font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+.nav__a:hover {
+  border-color: variables.$white;
 }

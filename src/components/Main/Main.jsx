@@ -12,7 +12,7 @@ const MainSection = () => {
       <div className="main__divOne d-flex justify-content-center align-items-center">
         <div className="info d-flex flex-column">
           <h1>Poznaj z nami uroki prawdziwej Kenii</h1>
-          <span>
+          <span className="first__span">
             Kenia jest przepięknym krajem położonym nad Oceanem Indyjskim, oferującym niezapomniane widoki i mnóstwo
             atrakcji. Przepiękne plaże, turkusowe wody oraz rozległe sawanny tworzą raj, który przyciąga podróżników z
             całego świata. Jedną z najważniejszych atrakcji turystycznych jest oczywiście safari w Narodowym Parku
@@ -31,8 +31,8 @@ const MainSection = () => {
           alt="Lew i słoń stojące naprzeciwko siebie pod rozłożystym drzewem akacji na tle zachodzącego słońca."
         />
       </div>
-      <div className="main__divTwo d-flex flex-row-reverse  justify-content-center align-items-center">
-        <span>
+      <div className="main__divTwo d-flex  justify-content-center align-items-center">
+        <span className="second__span">
           Wszystkie wycieczki organizujemy dowolnego dnia tygodnia. Jesteśmy elastyczni i dopasowujemy do każdego
           klienta. Zapewniamy opiekę przewodnika mówiącego po Polsku. Mamy wieloletnie doświadczenie.
         </span>

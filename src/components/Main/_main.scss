@@ -12,15 +12,18 @@
   }
   .info {
     margin: auto;
-    h2 {
+    h1 {
       font-size: 50px;
+      font-weight: bold;
     }
+
     #btnContact {
       margin: 25px auto;
+      padding: 12px;
+      border-radius: 15px;
     }
   }
-  .main__divOne,
-  .main__divTwo {
-    margin-bottom: 10px;
+  span {
+    font-size: 12px;
   }
 }
