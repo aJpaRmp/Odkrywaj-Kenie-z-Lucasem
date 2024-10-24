@@ -1,6 +1,6 @@
 const Nav = () => {
   return (
-    <nav className="d-flex align-items-center justify-content-between">
+    <nav className="d-flex align-items-center justify-content-around">
       <a className="link-offset-2 link-underline link-underline-opacity-0 link-light nav__a" href="#About">
         O mnie
       </a>

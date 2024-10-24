@@ -1,10 +1,10 @@
 import Header from "./components/Header/Header.jsx";
-import Footer from "./components/Footer/Footer.jsx";
 import MainSection from "./components/Main/Main.jsx";
-import Contact from "./components/Contact/Form.jsx";
+import About from "./components/About/About.jsx";
 import Gallery from "./components/Gallery/Gallery.jsx";
 import Trips from "./components/Trips/Trips.jsx";
-import About from "./components/About/About.jsx";
+import Contact from "./components/Contact/Form.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
   return (
@@ -14,8 +14,8 @@ function App() {
         <MainSection />
         <About />
         <Gallery />
-        <Trips />
-        <Contact />
+        {/*<Trips />
+        <Contact /> */}
       </main>
       <Footer />
     </>

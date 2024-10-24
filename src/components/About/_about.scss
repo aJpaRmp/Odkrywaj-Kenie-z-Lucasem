@@ -1,0 +1,73 @@
+@use "../../style/variables";
+
+#About {
+  color: variables.$white;
+  padding: 0 5px;
+  width: 100%;
+  margin-top: 20px;
+  .oMnie {
+    position: relative;
+    width: 75%;
+    div {
+      margin: auto;
+      max-width: 80%;
+      h1 {
+        font-size: 80px;
+      }
+      p {
+        font-size: 25px;
+      }
+      a {
+        color: variables.$white;
+        font-style: italic;
+      }
+    }
+  }
+  .div__me__img {
+    position: relative;
+    width: 25%;
+    height: 700px;
+    .me {
+      position: absolute;
+      width: 300px;
+      height: 500px;
+      border-radius: 50px;
+      -webkit-box-shadow: 7px 8px 18px -2px rgba(55, 91, 55, 1);
+      -moz-box-shadow: 7px 8px 18px -2px rgba(55, 91, 55, 1);
+      box-shadow: 7px 8px 18px -2px rgba(55, 91, 55, 1);
+      border: 1px solid variables.$white;
+      transition: top 0.5s ease, left 0.5s ease, z-index 0s 0.2s;
+      overflow: hidden;
+    }
+    .me_img {
+      transform: translate(0%, -20%);
+      width: 100%;
+      height: 155%;
+      object-fit: cover;
+    }
+    .me2_img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .one {
+      z-index: 1;
+      top: 0;
+      left: 0;
+    }
+    .two {
+      top: 100px;
+      left: 100px;
+    }
+    #me__arrow {
+      position: absolute;
+      right: 0px;
+      margin-right: 10px;
+      top: 0px;
+      width: 55px;
+      img {
+        filter: invert(1);
+      }
+    }
+  }
+}

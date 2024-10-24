@@ -1,62 +1,23 @@
 @use "./variables";
-@media (max-width: 1220px) {
-  #logo {
-    width: 70px !important;
-  }
-  h1 {
-    font-size: 25px !important;
-  }
-  .main__img {
-    transform: scale(0.8);
-  }
-}
-@media (max-width: 945px) {
+
+@media (max-width: 1260px) {
   header {
-    #logo {
-      width: 80px !important;
-    }
     nav {
       width: 100%;
     }
   }
 }
-@media (max-width: 585px) {
+@media (max-width: 768px) {
+  .div__main__img {
+    top: 50px; // Reduced spacing for smaller screens
+    left: 50px;
+  }
+
   h1 {
-    position: absolute;
+    font-size: 2rem;
   }
-  .first__span {
-    margin-top: 45px;
-  }
-  .main__divTwo {
-    flex-direction: column-reverse !important;
-  }
-  #main {
-    .main__img {
-      transform: scale(0.7);
-      transition: transform 0.3s ease;
-    }
-  }
-  footer {
-    font-size: 10px;
-    padding: 2px !important;
-    .socialmedia {
-      width: 145px;
-    }
-    .prawa__autorkie {
-      height: 100%;
-      width: 450px !important;
-      text-align: center;
-    }
-    h4 {
-      display: flex !important;
-      font-size: 10px;
-    }
-    h5 {
-      display: none;
-    }
-    .telefon {
-      flex-direction: column;
-      width: 135px;
-    }
+
+  #btnContact {
+    padding: 10px 15px;
   }
 }

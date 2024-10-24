@@ -1,8 +1,11 @@
 @use "./_reset";
 @use "./_variables";
-@use "./_media";
+@use "./_font";
 @use "./_body";
+@use "./_media";
 @use "../components/Header/_header";
 @use "../components/Nav/_nav";
 @use "../components/Main/_main";
+@use "../components/About/_about";
+@use "../components/Contact/_form";
 @use "../components/Footer/_footer";

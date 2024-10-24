@@ -11,8 +11,8 @@ const Footer = () => {
         </a>
       </div>
       <div className="prawa__autorkie text-center d-flex flex-column">
-        © 2024 LukazzKeni Wszystkie prawa zastrzeżone. Lukaz z Keni jest bezpośrednim organizatorem wycieczek – Lukas
-        jest lokalnym organizatorem wycieczek w Keni po polsku.
+        © 2024 LukazzKeni Wszystkie prawa zastrzeżone. Lukas z Kenii jest bezpośrednim organizatorem wycieczek – Lukas
+        jest lokalnym organizatorem wycieczek w Kenii po polsku.
         <p id="author">Strona stworzona przez `Michał Pawłowski`</p>
       </div>
       <div className="telefon d-flex align-items-center justify-content-center">
