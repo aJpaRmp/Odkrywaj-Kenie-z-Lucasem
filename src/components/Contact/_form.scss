@@ -1,0 +1,48 @@
+@use "../../style/variables";
+
+#Contact {
+  width: 100%;
+  height: 100%;
+  .contact_img {
+    padding: 5px;
+    width: 30%;
+    img {
+      transform: scale(0.8);
+      border-radius: 50px;
+      -webkit-box-shadow: 7px 8px 18px -2px rgba(55, 91, 55, 1);
+      -moz-box-shadow: 7px 8px 18px -2px rgba(55, 91, 55, 1);
+      box-shadow: 7px 8px 18px -2px rgba(55, 91, 55, 1);
+      border: 2px solid variables.$white;
+    }
+  }
+  form {
+    color: variables.$white;
+    width: 70%;
+    margin: 30px;
+    padding: 40px;
+    border: 2px solid variables.$white;
+    border-radius: 20px;
+    -webkit-box-shadow: 8px 8px 24px -5px rgba(204, 204, 204, 1);
+    -moz-box-shadow: 8px 8px 24px -5px rgba(204, 204, 204, 1);
+    box-shadow: 8px 8px 24px -5px rgba(204, 204, 204, 1);
+    .form__input {
+      background: none;
+      border: 2px solid variables.$white;
+      border-radius: 20px;
+      padding: 10px;
+      ::placeholder {
+        color: variables.$white;
+      }
+    }
+
+    #tresc {
+      height: 500px;
+    }
+    button {
+      width: 200px;
+      height: 50px;
+      border-radius: 20px;
+      margin: 20px auto;
+    }
+  }
+}

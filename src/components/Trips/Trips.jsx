@@ -1,9 +1,5 @@
 const Trips = () => {
-  return (
-    <section id="Trips">
-      <form action=""></form>
-    </section>
-  );
+  return <section id="Trips">jeszcze nie dokonczylem :d</section>;
 };
 
 export default Trips;

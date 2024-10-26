@@ -1,12 +1,12 @@
-import me from "../../assets/img20.jpg";
-import me2 from "../../assets/img39.jpg";
-import rotate from "../../assets/rotate.svg";
+import me from "../../assets/gallery/img20.jpg";
+import me2 from "../../assets/gallery/img39.jpg";
+import rotate from "../../assets/icon/rotate.svg";
 import { useState, useEffect } from "react";
 
 const About = () => {
   const birthDate = new Date(1999, 2, 22);
   const [age, setAge] = useState(0);
-  const [isSwapped, setIsSwapped] = useState(false); // Zmienna do zamiany obrazów
+  const [isSwapped, setIsSwapped] = useState(false);
 
   useEffect(() => {
     const calculateAge = () => {
@@ -26,7 +26,7 @@ const About = () => {
   }, [birthDate]);
 
   const handleSwapImages = () => {
-    setIsSwapped(!isSwapped); // Zmiana obrazów
+    setIsSwapped(!isSwapped);
   };
 
   return (

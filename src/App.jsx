@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header.jsx";
 import MainSection from "./components/Main/Main.jsx";
 import About from "./components/About/About.jsx";
@@ -8,17 +9,19 @@ import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
   return (
-    <>
+    <Router>
       <Header />
       <main>
-        <MainSection />
-        <About />
-        <Gallery />
-        {/*<Trips />
-        <Contact /> */}
+        <Routes>
+          <Route path="/" element={<MainSection />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/trips" element={<Trips />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </main>
       <Footer />
-    </>
+    </Router>
   );
 }
 

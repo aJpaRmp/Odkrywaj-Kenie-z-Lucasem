@@ -1,47 +1,39 @@
-import images from "../../../public/images.json";
+import { useEffect, useState } from "react";
+import Carousel from "react-bootstrap/Carousel";
 
 const Gallery = () => {
+  const [images, setImages] = useState([]);
+
+  useEffect(() => {
+    fetch("/images.json")
+      .then((response) => response.json())
+      .then((data) => {
+        const mappedImages = data.map((image) => ({
+          ...image,
+          fileName: new URL(`../../assets/gallery/${image.fileName}`, import.meta.url).href,
+        }));
+        setImages(mappedImages);
+        console.log("Images loaded:", mappedImages); // Sprawdź, czy obrazy są poprawnie załadowane
+      })
+      .catch((error) => {
+        console.error("Error loading images:", error);
+      });
+  }, []);
+
   return (
     <section id="Gallery">
-      <div id="carouselExampleIndicators" className="carousel slide">
-        <div className="carousel-indicators">
+      <div className="gallery">
+        <h2>Galeria zdjęć</h2>
+        <Carousel>
           {images.map((image, index) => (
-            <button
-              key={index}
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to={index}
-              className={index === 0 ? "active" : ""}
-              aria-current={index === 0 ? "true" : "false"}
-              aria-label={`Slide ${index + 1}`}
-            ></button>
+            <Carousel.Item key={index}>
+              <img src={image.fileName} className="d-block w-100" alt={image.alt} />
+              <Carousel.Caption>
+                <h3>{image.alt}</h3>
+              </Carousel.Caption>
+            </Carousel.Item>
           ))}
-        </div>
-        <div className="carousel-inner">
-          {images.map((image, index) => (
-            <div className={`carousel-item ${index === 0 ? "active" : ""}`} key={index}>
-              <img src={image.src} className="d-block w-100" alt={image.alt} />
-            </div>
-          ))}
-        </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
+        </Carousel>
       </div>
     </section>
   );

@@ -1,4 +1,4 @@
-import facebook from "../../assets/facebook.svg";
+import facebook from "../../assets/icon/facebook.svg";
 
 const Footer = () => {
   return (

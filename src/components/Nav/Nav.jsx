@@ -1,18 +1,20 @@
+import { Link } from "react-router-dom";
+
 const Nav = () => {
   return (
     <nav className="d-flex align-items-center justify-content-around">
-      <a className="link-offset-2 link-underline link-underline-opacity-0 link-light nav__a" href="#About">
+      <Link className="link-offset-2 link-underline link-underline-opacity-0 link-light nav__a" to="/about">
         O mnie
-      </a>
-      <a className="link-offset-2 link-underline link-underline-opacity-0 link-light nav__a" href="#Galerry">
+      </Link>
+      <Link className="link-offset-2 link-underline link-underline-opacity-0 link-light nav__a" to="/gallery">
         Galeria
-      </a>
-      <a className="link-offset-2 link-underline link-underline-opacity-0 link-light nav__a" href="#Trips">
+      </Link>
+      <Link className="link-offset-2 link-underline link-underline-opacity-0 link-light nav__a" to="/trips">
         Wycieczki
-      </a>
-      <a className="link-offset-2 link-underline link-underline-opacity-0 link-light nav__a" href="#Contact">
+      </Link>
+      <Link className="link-offset-2 link-underline link-underline-opacity-0 link-light nav__a" to="/contact">
         Kontakt
-      </a>
+      </Link>
     </nav>
   );
 };
