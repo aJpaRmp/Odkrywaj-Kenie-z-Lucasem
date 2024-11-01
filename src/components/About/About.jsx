@@ -1,5 +1,5 @@
 import me from "../../assets/gallery/img20.jpg";
-import me2 from "../../assets/gallery/img39.jpg";
+import me2 from "../../assets/gallery/img37.jpg";
 import rotate from "../../assets/icon/rotate.svg";
 import { useState, useEffect } from "react";
 
@@ -30,17 +30,25 @@ const About = () => {
   };
 
   return (
-    <section id="About" className="d-flex justify-content-around">
-      <div className="oMnie d-flex flex-column justify-content-center align-item-center">
+    <section id="About" className="d-flex justify-content-around w-100">
+      <div className="oMnie d-flex flex-column justify-content-center align-item-center position-relative w-75">
         <div>
           <h1>Cześć !!</h1>
           <p>
             Nazywam się Lukas, mam {age} lat, urodziłem się 22 marca 1999 roku w{" "}
-            <a href="https://pl.wikipedia.org/wiki/Mombasa" target="_blank">
+            <a
+              className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              href="https://pl.wikipedia.org/wiki/Mombasa"
+              target="_blank"
+            >
               Mombasie
             </a>{" "}
             , w{" "}
-            <a href="https://pl.wikipedia.org/wiki/Kenia" target="_blank">
+            <a
+              className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              href="https://pl.wikipedia.org/wiki/Kenia"
+              target="_blank"
+            >
               Kenii
             </a>
             .
@@ -55,16 +63,34 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="div__me__img">
+      <div className="div__me__img position-relative w-25">
         {/* Zmieniamy kolejność obrazów na podstawie isSwapped */}
-        <div className={`me me__first ${isSwapped ? "two" : "one"}`}>
-          <img className="me_img" src={me} alt="Moje zdjecie, miło cię widzieć" />
+        <div
+          className={`border rounded-5 border-light position-absolute overflow-hidden me me__first ${
+            isSwapped ? "two" : "one"
+          }`}
+        >
+          <img
+            loading="lazy"
+            className="me_img object-fit-cover w-100 "
+            src={me}
+            alt="Moje zdjecie, miło cię widzieć"
+          />
         </div>
-        <div className={`me me__second ${isSwapped ? "one" : "two"}`}>
-          <img className="me2_img" src={me2} alt="Moje zdjecie, miło cię widzieć" />
+        <div
+          className={`border rounded-5 border-light position-absolute overflow-hidden me me__second ${
+            isSwapped ? "one" : "two"
+          }`}
+        >
+          <img
+            loading="lazy"
+            className="me2_img object-fit-cover w-100 h-100"
+            src={me2}
+            alt="Moje zdjecie, miło cię widzieć"
+          />
         </div>
         <button type="button" id="me__arrow" className="btn btn-link" onClick={handleSwapImages}>
-          <img src={rotate} alt="strzałka zmieniająca widoczność zdjęcia" />
+          <img loading="lazy" src={rotate} alt="strzałka zmieniająca widoczność zdjęcia" />
         </button>
       </div>
     </section>

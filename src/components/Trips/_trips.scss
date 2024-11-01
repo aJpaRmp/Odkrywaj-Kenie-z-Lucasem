@@ -1,0 +1,64 @@
+@use "../../style/mixin" as *;
+@use "../../style/variables";
+#Trips {
+  padding: 2rem;
+  color: variables.$white;
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  article {
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 2rem;
+
+    h3 {
+      font-size: 1.75rem;
+      color: #2a7fba;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+
+      li {
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
+      }
+    }
+
+    h4,
+    h5 {
+      margin-top: 1rem;
+      font-size: 1.25rem;
+      color: variables.$black;
+    }
+
+    h5 {
+      font-size: 1.1rem;
+      color: #777;
+      margin-top: 0.5rem;
+    }
+
+    ul ul {
+      padding-left: 1.5rem;
+
+      li {
+        margin-bottom: 0.3rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+  img {
+    @include border;
+  }
+}

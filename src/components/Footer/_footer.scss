@@ -2,23 +2,19 @@
 
 footer {
   color: variables.$white;
-  border-top: 1px solid white;
-  width: 100%;
-  height: 100%;
-  padding: 6px;
   .prawa__autorkie {
     width: 650px;
   }
   #facebook__img {
     margin: 5px;
+    width: 25px;
+    height: 25px;
   }
   h4 {
     display: none;
   }
   #author {
-    opacity: 0.4;
     font-size: 5px;
-    margin: 0;
   }
   .tel {
     margin-right: 22px;
