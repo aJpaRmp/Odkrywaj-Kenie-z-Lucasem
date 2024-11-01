@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const MainSection = () => {
   return (
     <section id="main" className="w-100 d-grid">
-      <div className="info d-flex flex-column ">
+      <article className="info d-flex flex-column ">
         <h1>Poznaj z nami uroki prawdziwej Kenii</h1>
         <span className="info__span d-block  p-3">
           <a
@@ -25,7 +25,7 @@ const MainSection = () => {
           przygoda, która pozwala z bliska obserwować zarówno faunę, jak i florę na malowniczej sawannie, tworząc
           niezatarte wspomnienia, które pozostaną z Tobą na zawsze.
         </span>
-      </div>
+      </article>
 
       <img
         className="main__img img1"
@@ -33,9 +33,9 @@ const MainSection = () => {
         alt="Lew i słoń stojące obok siebie pod rozłożystym drzewem akacji na tle zachodzącego słońca."
       />
 
-      <div className="d-flex info2 align-items-center justify-content-center">
+      <article className="d-flex info2 align-items-center justify-content-center">
         <img
-          className="main__img aling-items-center img2 "
+          className="main__img img2 "
           src={image1}
           alt="Dwa słonie afrykańskie przechadzają się po sawannie podczas spektakularnego zachodu słońca."
         />
@@ -58,7 +58,7 @@ const MainSection = () => {
             Mamy wieloletnie doświadczenie.
           </li>
         </ul>
-      </div>
+      </article>
       <Link id="btnContact" to="/contact" className="btn btn-primary position-relative border-0">
         Zapytaj o cenę i zaplanuj swoją wycieczkę
       </Link>
