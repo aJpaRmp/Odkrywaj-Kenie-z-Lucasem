@@ -27,21 +27,19 @@ const MainSection = () => {
         </span>
       </div>
 
-      <div className="div__main__img div_img">
+      <img
+        className="main__img img1"
+        src={image2}
+        alt="Lew i słoń stojące obok siebie pod rozłożystym drzewem akacji na tle zachodzącego słońca."
+      />
+
+      <div className="d-flex info2 align-items-center justify-content-center">
         <img
-          className="main__img img1"
-          src={image2}
-          alt="Lew i słoń stojące obok siebie pod rozłożystym drzewem akacji na tle zachodzącego słońca."
+          className="main__img aling-items-center img2 "
+          src={image1}
+          alt="Dwa słonie afrykańskie przechadzają się po sawannie podczas spektakularnego zachodu słońca."
         />
-      </div>
-      <div className="d-flex info2 ">
-        <div className="div__main__img">
-          <img
-            className="main__img img2 "
-            src={image1}
-            alt="Dwa słonie afrykańskie przechadzają się po sawannie podczas spektakularnego zachodu słońca."
-          />
-        </div>
+
         <ul>
           <li>
             <img className="elephant" src={elephant} alt="ikonka głowy słonia" />

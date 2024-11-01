@@ -42,16 +42,15 @@
 }
 
 #main {
-  padding: 15px;
+  padding: 20px 15px 0px 15px;
   color: variables.$white;
-  margin-bottom: 20px;
   grid-template-columns: 82% 18%;
   grid-template-rows: 42% 42% 100px;
-  .div__main__img {
-    .main__img {
-      @include border;
-    }
+
+  .main__img {
+    @include border;
   }
+
   .info {
     h1 {
       font-size: 4em;
@@ -84,7 +83,8 @@
     height: 550px;
   }
   .img2 {
-    width: 355px;
-    height: 355px;
+    width: 400px;
+    height: 400px;
+    margin-left: 20px;
   }
 }
