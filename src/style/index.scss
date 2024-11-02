@@ -3,7 +3,6 @@
 @use "./_font";
 @use "./_body";
 @use "./_mixin";
-@use "./_media";
 @use "../components/Header/_header";
 @use "../components/Nav/_nav";
 @use "../components/Main/_main";
@@ -12,3 +11,4 @@
 @use "../components/Contact/_form";
 @use "../components/Trips/_trips";
 @use "../components/Footer/_footer";
+@use "./_media";
