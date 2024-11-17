@@ -9,7 +9,7 @@ const MainSection = () => {
   return (
     <section id="main" className=".container-fluid d-flex flex-column">
       <div className="row">
-        <article className="info  d-flex flex-column  col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-8 col-8">
+        <article className="info  d-flex flex-column  col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-8 col-7">
           <h1>Poznaj z nami uroki prawdziwej Kenii</h1>
           <span className="info__span">
             <a
@@ -29,7 +29,7 @@ const MainSection = () => {
         </article>
 
         <img
-          className="main__img img1 col-xxl-3  col-xl-3 col-lg-3 col-md-3 col-sm-4 col-4"
+          className="main__img img1 col-xxl-3  col-xl-3 col-lg-3 col-md-3 col-sm-4 col-5"
           src={image2}
           alt="Lew i słoń stojące obok siebie pod rozłożystym drzewem akacji na tle zachodzącego słońca."
         />

@@ -5,13 +5,25 @@ nav {
   font-size: 1.4rem;
   width: 50%;
   margin-right: 10px;
+  .nav__link {
+    margin: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+  }
+  .nav__link:hover {
+    border-color: variables.$white;
+  }
 }
-.nav__a {
-  margin: 10px;
-  font-weight: bold;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.3s ease-in-out;
-}
-.nav__a:hover {
-  border-color: variables.$white;
+.button__nav {
+  background: none;
+  border: none;
+  display: none;
+  .line {
+    border-radius: 25px;
+    background-color: variables.$white;
+    width: 35px;
+    height: 5px;
+    margin: 8px;
+  }
 }

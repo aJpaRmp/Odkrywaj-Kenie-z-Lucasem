@@ -5,7 +5,7 @@ import flag from "../../assets/icon/FlagaKenii.svg";
 
 const Header = () => {
   return (
-    <header className="d-flex align-items-center justify-content-around flex-wrap w-100">
+    <header className="d-flex align-items-center justify-content-between  w-100">
       <div className="logo__name d-flex align-items-center">
         <Link to="/">
           <img id="logo" src={logo} alt="Logo 'Odkryj Kenię z Lukasem Safaris'" />
