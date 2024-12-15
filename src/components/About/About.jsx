@@ -30,8 +30,8 @@ const About = () => {
   };
 
   return (
-    <section id="About" className="d-flex justify-content-around w-100">
-      <div className="oMnie d-flex flex-column justify-content-center align-item-center position-relative w-75">
+    <section id="About" className="d-flex justify-content-around w-100 p-1">
+      <div className="oMnie d-flex flex-column justify-content-center align-item-center col-xxl-8  col-xl-8 col-lg-7 col-md-7 col-sm-6 col-12">
         <div>
           <h1>Cześć !!</h1>
           <p>
@@ -63,7 +63,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="div__me__img position-relative w-25">
+      <div className="div__me__img position-relative col-xxl-4  col-xl-4 col-lg-5 col-md-5 col-sm-6 col-12">
         {/* Zmieniamy kolejność obrazów na podstawie isSwapped */}
         <div
           className={`border rounded-5 border-light position-absolute overflow-hidden me me__first ${
@@ -89,7 +89,7 @@ const About = () => {
             alt="Moje zdjecie, miło cię widzieć"
           />
         </div>
-        <button type="button" id="me__arrow" className="btn btn-link" onClick={handleSwapImages}>
+        <button type="button" id="me__arrow" className="btn btn-link position-absolute" onClick={handleSwapImages}>
           <img loading="lazy" src={rotate} alt="strzałka zmieniająca widoczność zdjęcia" />
         </button>
       </div>

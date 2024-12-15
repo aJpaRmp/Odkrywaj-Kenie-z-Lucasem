@@ -13,7 +13,8 @@
 
     img {
       @include border;
-      transform: scale(0.85);
+      width: 450px;
+      height: 600px;
       transition: transform 0.3s ease;
 
       &:hover {

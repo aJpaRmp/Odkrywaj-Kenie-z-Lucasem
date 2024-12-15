@@ -8,6 +8,32 @@
     }
   }
 }
+@media (max-width: 1250px) {
+  #main {
+    .info {
+      h1 {
+        font-size: 50px;
+      }
+    }
+    .info2 {
+      ul {
+        font-size: 20px;
+      }
+    }
+    .img1 {
+      width: 245px;
+      height: 495px;
+    }
+  }
+  #Contact {
+    .contact_img {
+      img {
+        width: 355px;
+        height: 525px;
+      }
+    }
+  }
+}
 @media (max-width: 1165px) {
   nav {
     position: absolute;
@@ -33,22 +59,51 @@
   .button__nav.clicked {
     border-radius: 10px;
   }
+  #Gallery {
+    .gallery {
+      .gallery__ul {
+        .gallery__item {
+          margin: 12px;
+        }
+      }
+    }
+  }
 }
-@media (max-width: 1250px) {
-  #main {
-    .info {
-      h1 {
-        font-size: 50px;
+@media (max-width: 1120px) {
+  #Gallery {
+    .gallery {
+      .gallery__ul {
+        .gallery__item {
+          margin: 10px;
+          max-height: 205px;
+          max-width: 300px;
+        }
       }
     }
-    .info2 {
-      ul {
-        font-size: 20px;
-      }
+  }
+}
+@media (max-width: 1105px) {
+  footer {
+    h5 {
+      font-size: 12px;
     }
-    .img1 {
-      width: 245px;
-      height: 495px;
+    h6 {
+      font-size: 12px;
+    }
+    .phone {
+      font-size: 13px;
+    }
+  }
+}
+@media (max-width: 1050px) {
+  #Gallery {
+    .gallery {
+      .gallery__ul {
+        .gallery__item {
+          max-height: 180px;
+          max-width: 250px;
+        }
+      }
     }
   }
 }
@@ -79,6 +134,65 @@
       margin: 0;
     }
   }
+  #About {
+    .div__me__img .me {
+      width: 240px;
+      height: 400px;
+    }
+  }
+  #Trips {
+    .wycieczki {
+      flex-direction: column;
+      div {
+        .div__main__img {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  footer {
+    h5 {
+      font-size: 11px;
+    }
+    .prawa__autorkie {
+      width: 600px;
+      h6 {
+        font-size: 10px;
+      }
+    }
+    .phone {
+      font-size: 11px;
+    }
+  }
+  #Gallery {
+    .gallery {
+      .gallery__ul {
+        .gallery__item {
+          max-height: 235px;
+          max-width: 320px;
+        }
+      }
+    }
+  }
+
+  #Contact {
+    flex-direction: column-reverse;
+    .contact_img {
+      img {
+        width: 475px;
+        height: 600px;
+      }
+    }
+    form {
+      margin: 0px;
+      h3 {
+        font-size: 25px;
+        margin: 30px 0px;
+      }
+    }
+  }
 }
 @media (max-width: 820px) {
   #main {
@@ -105,6 +219,49 @@
       height: 215px;
     }
   }
+  #About {
+    .oMnie {
+      div {
+        p {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  footer {
+    .socialmedia {
+      h5 {
+        font-size: 11px;
+      }
+      #facebook__img {
+        width: 18px;
+      }
+    }
+    .prawa__autorkie {
+      width: 525px;
+    }
+    .phone {
+      font-size: 10px;
+    }
+  }
+}
+@media (max-width: 770px) {
+  #Gallery {
+    .gallery {
+      .gallery__ul {
+        .gallery__item {
+          max-height: 215px;
+          max-width: 300px;
+        }
+      }
+    }
+  }
+  #Contact {
+    form {
+      margin: 0px;
+      width: 90% !important;
+    }
+  }
 }
 @media (max-width: 740px) {
   #main {
@@ -129,11 +286,36 @@
       height: 190px;
     }
   }
+  #Gallery {
+    .gallery {
+      .gallery__ul {
+        .gallery__item {
+          max-height: 200px;
+          max-width: 285px;
+        }
+      }
+    }
+  }
+  footer {
+    .prawa__autorkie {
+      width: 505px;
+    }
+  }
+}
+@media (max-width: 720px) {
+  footer {
+    .prawa__autorkie {
+      width: 480px;
+    }
+  }
 }
 @media (max-width: 700px) {
   header {
     .logo__name {
-      transform: scale(0.8);
+      #logo {
+        width: 80px;
+        height: 80px;
+      }
     }
     h1 {
       .website {
@@ -142,18 +324,19 @@
     }
   }
   #main {
-    margin-bottom: 100px;
+    margin-bottom: 110px;
     .info {
+      margin-bottom: 50px;
       .info__span {
         margin-left: 0px;
         width: 99%;
-        font-size: 12px;
+        font-size: 14px;
       }
     }
     .info2 {
       ul {
         padding-left: 10px;
-        font-size: 13px;
+        font-size: 13.7px;
         font-weight: bold;
         li {
           .elephant {
@@ -165,17 +348,86 @@
     }
   }
   nav {
-    width: 100%;
+    width: 110%;
+  }
+  #Trips {
+    padding: 1.15rem;
+    .wycieczki {
+      article {
+        margin: 10px;
+      }
+    }
+  }
+  #About {
+    margin: 0px;
+    flex-direction: column;
+    .oMnie,
+    .div__me__img {
+      width: 100%;
+    }
+    .oMnie {
+      div {
+        max-width: 95%;
+        h1 {
+          font-size: 65px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .div__me__img {
+      .one {
+        z-index: 1;
+        top: 25px;
+        left: 100px;
+      }
+      .two {
+        top: 125px;
+        left: 200px;
+      }
+    }
+  }
+  #Gallery {
+    .gallery {
+      .gallery__ul {
+        .gallery__item {
+          max-height: 175px;
+          max-width: 250px;
+        }
+      }
+    }
+  }
+  footer {
+    h6 {
+      font-size: 9px;
+    }
+    .prawa__autorkie {
+      width: 345px;
+    }
+    .socialmedia {
+      width: 16%;
+      h5 {
+        font-size: 10px;
+      }
+      #facebook__img {
+        margin: 2px;
+      }
+    }
   }
 }
 @media (max-width: 600px) {
   header {
     .logo__name {
-      transform: scale(0.7);
+      #logo {
+        width: 70px;
+        height: 70px;
+      }
     }
     h1 {
       .website {
-        font-size: 22px;
+        font-size: 20px;
       }
     }
     .button__nav {
@@ -183,7 +435,7 @@
     }
   }
   #main {
-    margin: 0;
+    margin-bottom: 40px;
     .info2 {
       ul {
         padding-left: 5px;
@@ -193,6 +445,16 @@
     .img2 {
       width: 185px;
       height: 185px;
+    }
+  }
+  #Gallery {
+    .gallery {
+      .gallery__ul {
+        .gallery__item {
+          max-height: 245px;
+          max-width: 325px;
+        }
+      }
     }
   }
 }
@@ -219,6 +481,24 @@
     .img2 {
       width: 180px;
       height: 180px;
+    }
+  }
+  #Contact {
+    padding: 10px;
+
+    form {
+      padding: 20px;
+      width: 95% !important;
+    }
+  }
+  footer {
+    .prawa__autorkie {
+      width: 340px;
+    }
+    .socialmedia {
+      h5 {
+        font-size: 9px;
+      }
     }
   }
 }

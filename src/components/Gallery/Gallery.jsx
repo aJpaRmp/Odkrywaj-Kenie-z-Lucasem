@@ -43,7 +43,7 @@ const Gallery = () => {
     <section id="Gallery" className="w-100 d-flex flex-column justify-content-center align-items-center ">
       <div className="gallery ">
         <h1 className="text-center ">Zdjęcia</h1>
-        <ul className="gallery__ul d-flex flex-wrap">
+        <ul className="gallery__ul d-flex flex-wrap justify-content-center">
           {images.map((image, index) => (
             <li
               key={index}

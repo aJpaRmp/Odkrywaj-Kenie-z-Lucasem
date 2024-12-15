@@ -15,23 +15,6 @@ body {
     #020b1a
   ) !important;
 }
-
 body::-webkit-scrollbar {
-  width: variables.$sb-size;
-}
-
-body::-webkit-scrollbar-track {
-  background: variables.$sb-track-color;
-  border-radius: 5px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: variables.$sb-thumb-color;
-  border-radius: 5px;
-}
-
-@supports not selector(::-webkit-scrollbar) {
-  body {
-    scrollbar-color: variables.$sb-thumb-color variables.$sb-track-color;
-  }
+  display: none;
 }
