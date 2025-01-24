@@ -1,19 +1,19 @@
 import image1 from "../../assets/rest/image1.jpeg";
 import image2 from "../../assets/rest/image2.jpeg";
-import elephant from "../../assets/icon/elephant.png";
+import elephant from "../../assets/icon/elephant.svg";
 
 import { Link } from "react-router-dom";
 // import audio from "../../assets/audio/audio.mp3";
 
 const MainSection = () => {
   return (
-    <section id="main" className=".container-fluid d-flex flex-column">
+    <section id="main" className="text-white p-3 d-flex flex-column">
       <div className="row">
-        <article className="info  d-flex flex-column  col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-8 col-7">
-          <h1>Poznaj z nami uroki prawdziwej Kenii</h1>
-          <span className="info__span">
+        <article className="info p-0 ps-2  d-flex flex-column  col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-8 col-7">
+          <h1 className="fst-italic">Poznaj z nami uroki prawdziwej Kenii</h1>
+          <span className="info__span ms-2">
             <a
-              className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              className="link-light text-white fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
               href="https://pl.wikipedia.org/wiki/Kenia"
               target="_blank"
             >
@@ -29,7 +29,7 @@ const MainSection = () => {
         </article>
 
         <img
-          className="main__img img1 col-xxl-3  col-xl-3 col-lg-3 col-md-3 col-sm-4 col-5"
+          className="main__img m-0 ms-auto img1 col-xxl-3  col-xl-3 col-lg-3 col-md-3 col-sm-4 col-5"
           src={image2}
           alt="Lew i słoń stojące obok siebie pod rozłożystym drzewem akacji na tle zachodzącego słońca."
         />
@@ -41,27 +41,31 @@ const MainSection = () => {
           alt="Dwa słonie afrykańskie przechadzają się po sawannie podczas spektakularnego zachodu słońca."
         />
         <article className="d-flex info2 col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-7">
-          <ul className="w-100">
-            <li>
-              <img className="elephant" src={elephant} alt="ikonka głowy słonia" />
+          <ul className="w-100 m-auto">
+            <li className="mb-3">
+              <img className="elephant me-3" src={elephant} alt="ikonka głowy słonia" />
               Wszystkie wycieczki organizujemy dowolnego dnia tygodnia.
             </li>
-            <li>
-              <img className="elephant" src={elephant} alt="ikonka głowy słonia" />
+            <li className="mb-3">
+              <img className="elephant me-3" src={elephant} alt="ikonka głowy słonia" />
               Jesteśmy elastyczni i dopasowujemy do każdego klienta.
             </li>
-            <li>
-              <img className="elephant" src={elephant} alt="ikonka głowy słonia" />
+            <li className="mb-3">
+              <img className="elephant me-3" src={elephant} alt="ikonka głowy słonia" />
               Zapewniamy opiekę przewodnika mówiącego po Polsku.
             </li>
             <li>
-              <img className="elephant" src={elephant} alt="ikonka głowy słonia" />
+              <img className="elephant me-3" src={elephant} alt="ikonka głowy słonia" />
               Mamy wieloletnie doświadczenie.
             </li>
           </ul>
         </article>
       </div>
-      <Link id="btnContact" to="/contact" className="btn btn-primary position-relative border-0">
+      <Link
+        to="/contact"
+        id="btnContact"
+        className="btn btn-primary cursor-pointer position-relative border-0 rounded-4"
+      >
         Zapytaj o cenę i zaplanuj swoją wycieczkę
       </Link>
     </section>

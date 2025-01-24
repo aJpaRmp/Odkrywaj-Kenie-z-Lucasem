@@ -24,25 +24,43 @@ const Nav = () => {
 
   return (
     <>
-      <nav className={`d-flex align-items-center justify-content-around ${isMenuActive ? "active" : ""}`}>
-        <Link className="link-offset-2 link-underline link-underline-opacity-0 link-light nav__link" to="/about">
+      <nav className={`d-flex p-1 align-items-center justify-content-around z-3 ${isMenuActive ? "active" : ""}`}>
+        <Link
+          to="/"
+          className="link-offset-2 m-2 fw-bold  link-underline link-underline-opacity-0 link-light nav__link "
+        >
+          Strona Głowna
+        </Link>
+        <Link
+          className="link-offset-2 m-2 fw-bold  link-underline link-underline-opacity-0 link-light nav__link "
+          to="/about"
+        >
           O mnie
         </Link>
-        <Link className="link-offset-2 link-underline link-underline-opacity-0 link-light nav__link" to="/gallery">
+        <Link
+          className="link-offset-2 m-2 fw-bold  link-underline link-underline-opacity-0 link-light nav__link "
+          to="/gallery"
+        >
           Galeria
         </Link>
-        <Link className="link-offset-2 link-underline link-underline-opacity-0 link-light nav__link" to="/trips">
+        <Link
+          className="link-offset-2 m-2 fw-bold  link-underline link-underline-opacity-0 link-light nav__link "
+          to="/trips"
+        >
           Wycieczki
         </Link>
-        <Link className="link-offset-2 link-underline link-underline-opacity-0 link-light nav__link" to="/contact">
+        <Link
+          className="link-offset-2 m-2 fw-bold  link-underline link-underline-opacity-0 link-light nav__link "
+          to="/contact"
+        >
           Kontakt
         </Link>
       </nav>
 
-      <button className={`button__nav ${isMenuActive ? "clicked" : ""}`} type="button">
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
+      <button className={`button__nav border-0 bg-transparent ${isMenuActive ? "clicked" : ""}`} type="button">
+        <div className="line bg-white rounded-4 m-2"></div>
+        <div className="line bg-white rounded-4 m-2"></div>
+        <div className="line bg-white rounded-4 m-2"></div>
       </button>
     </>
   );

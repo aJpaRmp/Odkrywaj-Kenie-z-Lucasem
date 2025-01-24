@@ -1,22 +1,14 @@
 @use "../../style/variables";
 
 #About {
-  color: variables.$white;
-  padding: 0 5px;
-  margin: 50px 0;
   .oMnie {
     div {
-      margin: auto;
       max-width: 80%;
       h1 {
         font-size: 80px;
       }
       p {
         font-size: 25px;
-      }
-      a {
-        color: variables.$white;
-        font-style: italic;
       }
     }
   }
@@ -36,7 +28,6 @@
     }
 
     .one {
-      z-index: 1;
       top: 0;
       left: 0;
     }

@@ -34,7 +34,8 @@
     }
   }
 }
-@media (max-width: 1165px) {
+
+@media (max-width: 1215px) {
   nav {
     position: absolute;
     right: -20px;
@@ -59,6 +60,9 @@
   .button__nav.clicked {
     border-radius: 10px;
   }
+}
+
+@media (max-width: 1165px) {
   #Gallery {
     .gallery {
       .gallery__ul {
@@ -313,13 +317,18 @@
   header {
     .logo__name {
       #logo {
-        width: 80px;
-        height: 80px;
+        width: 75px;
+        height: 75px;
       }
-    }
-    h1 {
-      .website {
-        font-size: 25px;
+      .logo__i__flaga {
+        #Kenia {
+          width: 45px;
+        }
+        h1 {
+          .fs-2 {
+            font-size: 20px !important;
+          }
+        }
       }
     }
   }

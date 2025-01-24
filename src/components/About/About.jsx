@@ -30,14 +30,14 @@ const About = () => {
   };
 
   return (
-    <section id="About" className="d-flex justify-content-around w-100 p-1">
+    <section id="About" className="d-flex justify-content-around w-100 text-white my-5 p-1">
       <div className="oMnie d-flex flex-column justify-content-center align-item-center col-xxl-8  col-xl-8 col-lg-7 col-md-7 col-sm-6 col-12">
-        <div>
+        <div className="m-auto">
           <h1>Cześć !!</h1>
           <p>
             Nazywam się Lukas, mam {age} lat, urodziłem się 22 marca 1999 roku w{" "}
             <a
-              className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-white fst-italic"
               href="https://pl.wikipedia.org/wiki/Mombasa"
               target="_blank"
             >
@@ -45,7 +45,7 @@ const About = () => {
             </a>{" "}
             , w{" "}
             <a
-              className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-white fst-italic"
               href="https://pl.wikipedia.org/wiki/Kenia"
               target="_blank"
             >
@@ -64,10 +64,9 @@ const About = () => {
         </div>
       </div>
       <div className="div__me__img position-relative col-xxl-4  col-xl-4 col-lg-5 col-md-5 col-sm-6 col-12">
-        {/* Zmieniamy kolejność obrazów na podstawie isSwapped */}
         <div
-          className={`border rounded-5 border-light position-absolute overflow-hidden me me__first ${
-            isSwapped ? "two" : "one"
+          className={`border rounded-5 border-light position-absolute overflow-hidden me me__first  ${
+            isSwapped ? "two" : "one z-2"
           }`}
         >
           <img
@@ -79,7 +78,7 @@ const About = () => {
         </div>
         <div
           className={`border rounded-5 border-light position-absolute overflow-hidden me me__second ${
-            isSwapped ? "one" : "two"
+            isSwapped ? "one z-2" : "two"
           }`}
         >
           <img

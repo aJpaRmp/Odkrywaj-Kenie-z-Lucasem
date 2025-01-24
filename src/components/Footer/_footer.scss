@@ -1,22 +1,8 @@
-@use "../../style/variables";
-
 footer {
-  color: variables.$white;
   .prawa__autorkie {
     width: 650px;
   }
-  #facebook__img {
-    margin: 5px;
-    width: 25px;
-    height: 25px;
-  }
-  h4 {
-    display: none;
-  }
   #author {
     font-size: 5px;
-  }
-  .tel {
-    margin-right: auto;
   }
 }

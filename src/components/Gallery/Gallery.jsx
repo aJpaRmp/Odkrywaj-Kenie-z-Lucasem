@@ -40,31 +40,48 @@ const Gallery = () => {
   };
 
   return (
-    <section id="Gallery" className="w-100 d-flex flex-column justify-content-center align-items-center ">
-      <div className="gallery ">
-        <h1 className="text-center ">Zdjęcia</h1>
-        <ul className="gallery__ul d-flex flex-wrap justify-content-center">
+    <section id="Gallery" className="w-100 d-flex flex-column justify-content-center align-items-center">
+      <div className="gallery overflow-y-scroll m-3">
+        <h1 className="text-center fs-1 text-white">Zdjęcia</h1>
+        <ul className="gallery__ul d-flex flex-wrap justify-content-center m-0 p-2 rounded-4 list-group-item">
           {images.map((image, index) => (
             <li
               key={index}
-              className="gallery__item overflow-hidden border border-3 border-light"
+              className="gallery__item cursor-pointer overflow-hidden border border-3 border-light m-4 rounded-4 shadow-lg"
               onClick={() => showPopup(index)}
             >
-              <img src={image.fileName} alt={image.alt} className="gallery__img object-fit-cover " loading="lazy" />
+              <img
+                src={image.fileName}
+                alt={image.alt}
+                className="gallery__img object-fit-cover  w-100 h-100"
+                loading="lazy"
+              />
             </li>
           ))}
         </ul>
       </div>
       {popupVisible && (
-        <div className="popup d-flex flex-wrap position-fixed align-items-center align-content-center justify-content-center h-100 w-100">
-          <button aria-label="Zamknij popup" className="popup__close" onClick={closePopup}>
+        <div className="popup z-3 bg-black bg-opacity-50 d-flex position-fixed  top-0 align-items-center align-content-center justify-content-center h-100 w-100">
+          <button
+            aria-label="Zamknij popup"
+            className="popup__close m-4 bg-transparent cursor-pointer end-0 border-0 position-absolute opacity-50 align-self-start "
+            onClick={closePopup}
+          >
             <img src={cancel} alt="ikonka zamknęcia" />
           </button>
-          <img src={images[currentImgIndex].fileName} alt="" className="popup__img" />
-          <button aria-label="Poprzednie zdjęcie" className="popup__arrow popup__arrow--left" onClick={showPreviousImg}>
+          <img src={images[currentImgIndex].fileName} alt="" className="popup__img " />
+          <button
+            aria-label="Poprzednie zdjęcie"
+            className="popup__arrow popup__arrow--left cursor-pointer start-0 m-5 bg-transparent border-0 position-absolute opacity-50 align-self-center"
+            onClick={showPreviousImg}
+          >
             <img src={arrow} alt="ikonka strzałki w lewo" />
           </button>
-          <button aria-label="Następne zdjęcie" className="popup__arrow popup__arrow--right" onClick={showNextImg}>
+          <button
+            aria-label="Następne zdjęcie"
+            className="popup__arrow popup__arrow--right cursor-pointer end-0 m-5 bg-transparent border-0 position-absolute opacity-50 align-self-center justify-selt-end"
+            onClick={showNextImg}
+          >
             <img src={arrow} alt="ikonka strzałki w prawo" />
           </button>
         </div>
